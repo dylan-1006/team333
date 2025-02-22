@@ -20,6 +20,13 @@ function InputSelection() {
     setSelectedOption(option);
   };
 
+  const handleContinue = () => {
+    if (selectedOption === "live") {
+      navigate("/livewebcam");
+    }
+    // Add more conditions if needed for other options
+  };
+
   return (
     <div className="input-selection-container">
       <button className="back-button" onClick={handleBack}>
@@ -50,7 +57,9 @@ function InputSelection() {
           <p>Upload For Translation</p>
         </div>
       </div>
-      <button className="continue-button">Continue</button>
+      <button className="continue-button" onClick={handleContinue}>
+        Continue
+      </button>
     </div>
   );
 }

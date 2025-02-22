@@ -38,7 +38,7 @@ function Home() {
             onClick={() => navigate("/options")}
             className="get-started-button"
           >
-            Get Started
+            Try it Out
           </button>
         </div>
         <div className="image-content">
