@@ -1,44 +1,46 @@
-import React, { useState } from "react";
-import axios from "axios";
+import React from "react";
 import "./Home.css";
 
 function Home() {
-  const [selectedFile, setSelectedFile] = useState(null);
-
-  const handleFileChange = (event) => {
-    setSelectedFile(event.target.files[0]);
-  };
-
-  const handleUpload = async () => {
-    if (!selectedFile) return;
-
-    const formData = new FormData();
-    formData.append("video", selectedFile);
-
-    try {
-      const response = await axios.post("/upload", formData, {
-        headers: {
-          "Content-Type": "multipart/form-data",
-        },
-      });
-      console.log("Upload successful:", response.data);
-    } catch (error) {
-      console.error("Error uploading file:", error);
-    }
-  };
-
   return (
     <div className="home-container">
-      <h1 className="title">Upload Your Video</h1>
-      <input
-        type="file"
-        accept="video/*"
-        onChange={handleFileChange}
-        className="file-input"
-      />
-      <button onClick={handleUpload} className="upload-button">
-        Upload
-      </button>
+      <header className="header">
+        <div className="logo">
+          <img
+            src={`${process.env.PUBLIC_URL}/logo.png`}
+            alt="Logo"
+            className="logo-image"
+          />
+          SignSpeak
+        </div>
+        <div className="buttons">
+          <button className="contact-button">Contact Us</button>
+          <button className="download-button">Download</button>
+        </div>
+      </header>
+      <main className="main-content">
+        <div className="text-content">
+          <h1>
+            Bridging Communication,
+            <br />
+            One Sign at a Time.
+          </h1>
+          <p>
+            SignSpeak is a real-time sign language translation web tool powered
+            by AI & Machine Learning. Whether you're deaf, hard of hearing, or
+            learning sign language, our tool makes communication seamless,
+            accessible, and instant.
+          </p>
+          <button className="get-started-button">Get Started</button>
+        </div>
+        <div className="image-content">
+          <img
+            src={`${process.env.PUBLIC_URL}/home_page_image.jpg`}
+            alt="Sign Language Illustration"
+            className="illustration"
+          />
+        </div>
+      </main>
     </div>
   );
 }
