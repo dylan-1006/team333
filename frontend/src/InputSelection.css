@@ -1,0 +1,46 @@
+.input-selection-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.option-cards {
+  display: flex;
+  gap: 20px; /* Space between cards */
+}
+
+.option-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 150px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.circle {
+  margin-top: 12px;
+  width: 70px;
+  height: 70px;
+  background-color: #e0e0e0;
+  clip-path: circle(50%); /* Use clip-path to create a circle */
+  margin-bottom: 5px;
+}
+
+.continue-button {
+  margin-top: 20px;
+  padding: 10px 40px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
