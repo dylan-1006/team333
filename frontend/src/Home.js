@@ -1,7 +1,10 @@
 import React from "react";
 import "./Home.css";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+  const navigate = useNavigate();
+
   return (
     <div className="home-container">
       <header className="header">
@@ -31,7 +34,12 @@ function Home() {
             learning sign language, our tool makes communication seamless,
             accessible, and instant.
           </p>
-          <button className="get-started-button">Get Started</button>
+          <button
+            onClick={() => navigate("/options")}
+            className="get-started-button"
+          >
+            Get Started
+          </button>
         </div>
         <div className="image-content">
           <img

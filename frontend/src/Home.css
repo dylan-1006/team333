@@ -156,7 +156,7 @@ body {
 
 .get-started-button {
   margin-top: 2vh;
-  padding: 1.5vh 2vw;
+  padding: 1.8vh 2vw;
   background-color: #000000;
   color: #fff;
   border: none;
@@ -196,12 +196,6 @@ body {
     font-size: 5vw;
   }
 
-  .option-button,
-  .upload-button {
-    font-size: 3vw;
-    padding: 2vh 4vw;
-  }
-
   .get-started-button {
     font-size: 3vw;
     padding: 2vh 4vw;
@@ -210,6 +204,6 @@ body {
   .contact-button,
   .download-button {
     font-size: 3vw;
-    padding: 2vh 4vw;
+    padding: 2.5vh 4vw;
   }
 }
