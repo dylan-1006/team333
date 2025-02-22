@@ -38,14 +38,24 @@
   border-radius: 10px;
   margin: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: border 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.option-card.selected {
+  border: 2px solid #000;
 }
 
 .circle {
-  width: 100px;
-  height: 100px;
-  background-color: #e0e0e0;
+  width: 70px;
+  height: 70px;
+  background-color: #e3e3e3;
   clip-path: circle(50%);
   margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .continue-button {
@@ -61,5 +71,15 @@
 
 .option-card p {
   font-weight: semi-bold;
+  font-size: 1rem;
+}
+
+.icon {
+  font-size: 30px;
+  color: #333;
+}
+
+.back-icon {
+  margin-right: 15px;
   font-size: 1rem;
 }
