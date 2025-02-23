@@ -1,0 +1,93 @@
+.gesture-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 640px;
+  height: 480px;
+  background: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.input-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.output-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.controls {
+  width: 100%;
+  max-width: 640px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.gesture-text {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 5px;
+}
+
+.camera-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.camera-button:hover {
+  background-color: #45a049;
+}
+
+.instructions {
+  width: 100%;
+  max-width: 640px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.instructions h3 {
+  margin-top: 0;
+}
+
+.instructions ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.instructions li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.instructions li:last-child {
+  border-bottom: none;
+} 
