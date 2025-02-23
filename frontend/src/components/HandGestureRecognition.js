@@ -3,9 +3,13 @@ import { Hands } from "@mediapipe/hands";
 import { Camera } from "@mediapipe/camera_utils";
 import { drawConnectors, drawLandmarks } from "@mediapipe/drawing_utils";
 import { HAND_CONNECTIONS } from "@mediapipe/hands";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom";
 import "./HandGestureRecognition.css";
 
 function HandGestureRecognition() {
+  const navigate = useNavigate();
   const videoRef = useRef(null);
   const canvasRef = useRef(null);
   const cameraRef = useRef(null);
@@ -229,6 +233,10 @@ function HandGestureRecognition() {
     }, 3000);
   };
 
+  const handleBack = () => {
+    navigate("/options");
+  };
+
   const startCamera = async () => {
     try {
       // Stop any existing streams
@@ -410,6 +418,10 @@ function HandGestureRecognition() {
 
   return (
     <div className="gesture-container">
+      <button className="back-button" onClick={handleBack}>
+        <FontAwesomeIcon icon={faArrowLeft} className="back-icon" />
+        Back
+      </button>
       <div className="video-wrapper">
         <video
           ref={videoRef}
