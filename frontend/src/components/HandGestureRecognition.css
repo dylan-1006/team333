@@ -32,12 +32,16 @@
 }
 
 .controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
   width: 100%;
   max-width: 640px;
   background: white;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
   text-align: center;
 }
@@ -49,12 +53,15 @@
   padding: 10px;
   background: #f8f9fa;
   border-radius: 5px;
+  text-align: center;
 }
 
 .camera-button {
+  display: block;
+  margin: 0 auto 20px;
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   border: none;
   border-radius: 5px;
@@ -71,7 +78,7 @@
   background: white;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .instructions h3 {
@@ -90,4 +97,20 @@
 
 .instructions li:last-child {
   border-bottom: none;
-} 
+}
+
+.instructions p {
+  font-weight: bold;
+}
+
+.tts-button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
