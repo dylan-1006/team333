@@ -1,0 +1,83 @@
+.gesture-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .video-container {
+    position: relative;
+    width: 640px;
+    height: 480px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #000;
+  }
+  
+  .text-container {
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 640px;
+  }
+  
+  .recognized-text-box {
+    background-color: #f8f9fa;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button-container {
+    margin-top: 20px;
+  }
+  
+  .control-button {
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .control-button:hover {
+    background-color: #0056b3;
+  }
+  
+  h2 {
+    color: #444;
+    margin-bottom: 10px;
+    font-size: 28px;
+  }
+  
+  @media (max-width: 700px) {
+    .video-container {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 4/3;
+    }
+    
+    .text-container {
+      width: 95%;
+    }
+  }
